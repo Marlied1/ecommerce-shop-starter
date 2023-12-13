@@ -4,14 +4,22 @@ import './index.css';
 import App from './App';
 //Product Provider 
 import ProductProvider from './contexts/ProductContext';
+//sidebar provider
+import SidebarProvider, { SidebarContext } from './contexts/SidebarContext';
+//cart provider
+import CartProvider, { CartContext } from './contexts/CartContext';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ProductProvider>
-     <React.StrictMode>
-       <App />
-    </React.StrictMode>
-  </ProductProvider>
+  <SidebarProvider>
+    <CartProvider>
+    <ProductProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ProductProvider>
+    </CartProvider>
+  </SidebarProvider>
   
 );
