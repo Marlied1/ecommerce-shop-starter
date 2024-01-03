@@ -4,7 +4,7 @@ const Footer = () => {
   return ( 
     <footer className='bg-primary py-12'>
       <div className='container mx-auto'>
-        <p className='text-white text-center'>Copyright &copy; || Marlie D. 2024. || All rights reserved.</p>
+        <p className='text-white text-center'> &copy; Copyright 2024 MarlieTechDesings.</p>
       </div>
     </footer>
   );
